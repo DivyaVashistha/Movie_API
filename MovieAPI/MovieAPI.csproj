@@ -218,9 +218,24 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201902060925244_InitialModel.cs" />
+    <Compile Include="Migrations\201902060925244_InitialModel.Designer.cs">
+      <DependentUpon>201902060925244_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902060926357_UpdateGenre.cs" />
+    <Compile Include="Migrations\201902060926357_UpdateGenre.Designer.cs">
+      <DependentUpon>201902060926357_UpdateGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902060928134_UpdateMovie.cs" />
+    <Compile Include="Migrations\201902060928134_UpdateMovie.Designer.cs">
+      <DependentUpon>201902060928134_UpdateMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -314,6 +329,17 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201902060925244_InitialModel.resx">
+      <DependentUpon>201902060925244_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902060926357_UpdateGenre.resx">
+      <DependentUpon>201902060926357_UpdateGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902060928134_UpdateMovie.resx">
+      <DependentUpon>201902060928134_UpdateMovie.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
