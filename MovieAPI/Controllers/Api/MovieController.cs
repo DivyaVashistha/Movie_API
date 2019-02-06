@@ -5,9 +5,11 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using MovieAPI.Models;
+using System.Web.Http.Cors;
 
 namespace MovieAPI.Controllers.api
 {
+    [EnableCors(origins: "http://localhost:4200", headers: "*", methods: "*")]
     public class MovieController : ApiController
     {
         ApplicationDbContext _context;
