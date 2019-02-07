@@ -237,6 +237,10 @@
     <Compile Include="Migrations\201902060928134_UpdateMovie.Designer.cs">
       <DependentUpon>201902060928134_UpdateMovie.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201902070542440_dropCol.cs" />
+    <Compile Include="Migrations\201902070542440_dropCol.Designer.cs">
+      <DependentUpon>201902070542440_dropCol.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -346,6 +350,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201902060928134_UpdateMovie.resx">
       <DependentUpon>201902060928134_UpdateMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902070542440_dropCol.resx">
+      <DependentUpon>201902070542440_dropCol.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
